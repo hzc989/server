@@ -23,7 +23,7 @@ test -x /usr/sbin/mysqld || exit 0
 
 SELF=$(cd $(dirname $0); pwd -P)/$(basename $0)
 
-MYADMIN="/usr/bin/mysqladmin --defaults-file=/etc/mysql/debian.cnf"
+MYADMIN="/usr/bin/mysqladmin"
 
 # priority can be overridden and "-s" adds output to stderr
 ERR_LOGGER="logger -p daemon.err -t /etc/init.d/mysql -i"

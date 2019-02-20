@@ -3,7 +3,7 @@
 set -e
 
 # Install Spider
-mysql --defaults-file=/etc/mysql/debian.cnf < /usr/share/mysql/install_spider.sql || true
+mysql < /usr/share/mysql/install_spider.sql || true
 # Always exit with success instead of leaving dpkg in a broken state
 
 
